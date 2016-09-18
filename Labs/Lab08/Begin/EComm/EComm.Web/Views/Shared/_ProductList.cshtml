@@ -1,0 +1,10 @@
+﻿@model ProductListViewModel
+
+<table class="table-striped">
+  @foreach (var product in Model.Products) {
+  <tr>
+    <td>@product.ProductName</td>
+    <td>@product.UnitPrice</td>
+  </tr>
+  }
+</table>
